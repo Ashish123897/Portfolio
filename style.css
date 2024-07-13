@@ -39,11 +39,10 @@ nav
 
 body 
 {
-    padding-top: 60px; 
-    overflow-x:hidden/* Adjust this value based on the height of your nav to prevent content from being hidden behind it */
+    padding-top: 60px; /* Adjust this value based on the height of your nav to prevent content from being hidden behind it */
 }
-
-nav ul {
+nav ul 
+{
     display: flex;
     list-style: none;
 }
@@ -69,13 +68,17 @@ nav ul li a:hover
 }
 /* Projects section */
 .projects {
-    background-color: rgb(13, 13, 28);
+    background-color:black;
     padding: 40px 20px;
     text-align: center;
     color: #f39c12;
 }
-
-.projects h2 {
+.back
+{
+    background-color: black;
+}
+.projects h2 
+{
     font-size: 2em;
     margin-bottom: 40px;
 }
@@ -83,15 +86,16 @@ nav ul li a:hover
 .projects h3 {
     color: whitesmoke;
 }
-
 .project-cards {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    color:rgb(232, 238, 234);
 }
 
-.card {
-    background-color: black;
+.card 
+{
+    background-image: url('https://wallpapercave.com/wp/BMrmUGk.jpg');
     border: 1px solid #ddd;
     border-radius: 10px;
     box-shadow: 0 4px 8px whitesmoke;
@@ -242,13 +246,17 @@ input[type=text], select, textarea {
   }
   
   /* Add a background color and some padding around the form */
-  
+
   .container1
   {
     border-radius: 5px;
-    background-color:rgb(13, 13, 28);
+    background-color:#010b14;
     padding: 20px;
     color:whitesmoke;
+    text-decoration: none;
+    color: #ecf0f1;
+    font-weight: bold;
+    transition: color 0.3s;
   }
   .container1 h5
   {
@@ -258,3 +266,36 @@ input[type=text], select, textarea {
     color:#f39c12;
     margin-top: 20px;
     font-size:40px;
+  }
+  /* Footer styles */
+.footer {
+    background-color: #010b14; /* Dark blue-gray */
+    color: #ecf0f1; /* Light gray */
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer .footer-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer .social-icons {
+    display: flex;
+    gap: 20px;
+}
+
+.footer .social-icons a img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s;
+}
+
+.footer .social-icons a img:hover {
+    transform: scale(1.2); /* Zoom effect on hover */
+}

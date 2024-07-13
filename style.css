@@ -39,7 +39,8 @@ nav
 
 body 
 {
-    padding-top: 60px; /* Adjust this value based on the height of your nav to prevent content from being hidden behind it */
+    padding-top: 60px; 
+    overflow-x:hidden;
 }
 nav ul 
 {
